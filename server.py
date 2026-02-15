@@ -6,7 +6,6 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-# Токен берём из переменных окружения Render
 TOKEN = os.environ.get('TELEGRAM_TOKEN')
 
 @app.route('/')
